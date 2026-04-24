@@ -1,50 +1,39 @@
-# Welcome to your Expo app 👋
+# STEMM Lab — Speech Synthesis Prototype
+**CSE3MAD Assessment 3 | La Trobe University | Lesandu Hetti Arachchige (21533031)**
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+## What This Feature Does
+Reads experiment instruction steps aloud using the device's built-in
+text-to-speech engine via expo-speech. Students can follow along
+hands-free while conducting physical STEMM experiments.
 
-## Get started
+## Why STEMM Lab Needs It
+The User Specification (Screen 7) describes an Activity Instructions Screen
+where steps are shown one at a time. Students are physically active during
+experiments — hands busy, attention on the task. Audio instructions remove
+the need to look down and read, reducing cognitive load and supporting
+students who are early readers, ESL learners, or have dyslexia.
 
-1. Install dependencies
+## How To Run
+1. Clone this repo
+2. npm install
+3. npx expo start
+4. Scan QR with Expo Go on a physical device
+   (TTS works on physical devices — behaviour may vary on simulators)
 
-   ```bash
-   npm install
-   ```
+## Package Used
+- expo-speech: https://docs.expo.dev/versions/latest/sdk/speech/
 
-2. Start the app
+## Ethical Considerations
+- All TTS processing is on-device. No text is sent to any server.
+- No microphone is used.
+- Language set to en-AU (Australian English) — production would offer
+  multilingual support for ESL students.
 
-   ```bash
-   npx expo start
-   ```
+## Known Limitation
+Speech.pause() is iOS only. On Android, stop is used instead.
+Word-level highlighting works on iOS; Android shows full-line highlight.
 
-In the output, you'll find options to open the app in a
-
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
-
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
-
-## Get a fresh project
-
-When you're ready, run:
-
-```bash
-npm run reset-project
-```
-
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
-
-## Learn more
-
-To learn more about developing your project with Expo, look at the following resources:
-
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
-
-## Join the community
-
-Join our community of developers creating universal apps.
-
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
+## Acknowledgements
+- expo-speech documentation: https://docs.expo.dev/versions/latest/sdk/speech/
+- STEMM Lab User Specification (2026), CSE3MAD, La Trobe University
+- WCAG 2.1 accessibility guidelines: https://www.w3.org/WAI/WCAG21/quickref/
