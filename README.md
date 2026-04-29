@@ -1,4 +1,4 @@
-# STEMM Lab — Speech Synthesis Prototype
+# STEMM Lab - Speech Synthesis Prototype
 **CSE3MAD Assessment 3 | La Trobe University | Lesandu Hetti Arachchige (21533031)**
 
 ## What This Feature Does
