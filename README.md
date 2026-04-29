@@ -5,7 +5,7 @@
 Reads experiment instruction steps aloud using the device's built-in text-to-speech engine via `expo-speech`. Students can follow along hands-free while conducting physical STEMM experiments.
 
 ## Why STEMM Lab Needs It
-The User Specification (Screen 7) describes an Activity Instructions Screen where steps are shown one at a time. Students are physically active during experiments — hands busy, attention on the task. Audio instructions remove the need to look down and read, reducing cognitive load and supporting students who are early readers, ESL learners, or have dyslexia.
+The User Specifications describe an Activity Instructions Screen where steps are shown one at a time. Students are physically active during experiments hands busy, attention on the task. Audio instructions remove the need to look down and read, reducing cognitive load and supporting students who are early readers, ESL learners, or have dyslexia.
 
 ## Tech Stack & Architecture
 - **Framework**: Expo / React Native
